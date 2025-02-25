@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { MyName } from "./components/MyName"
+import { MyMbti } from "./components/MyMbti"
+import { MyIntro } from "./components/MyIntro"
+import { LikeImg } from "./components/LikeImg"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+      <MyName name="이태빈" />
+      <MyMbti mbti="INTJ" />
+      <MyIntro intro="풀스택 6기 스프린트 수강생입니다."/>
+      <LikeImg img="https://www.codeit.kr/meta/og_tag.png"/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
