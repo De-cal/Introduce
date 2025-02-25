@@ -12,21 +12,22 @@ div {
 }
 
 div div{
-  background-color: white;
   width: 500px;
   margin: 20px auto;
   border-radius: 10px;
   padding: 10px 0;
 }
 
-.img {
+.container div {
+  background-color: white;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img span {
-  margin: 5px;
+.container div span {
+  margin: 3px;
 }
 
 html {
